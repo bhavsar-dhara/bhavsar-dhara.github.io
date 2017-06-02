@@ -17,19 +17,29 @@
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="images/favicon_updated.ico">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script>
+        var shiftWindow = function() { scrollBy(0, -75) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+    </script>
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
+<body onload="load()">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">DHARA BHAVSAR</a>
+                <a class="navbar-brand" href="index.html">
+                    DHARA BHAVSAR
+                </a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#intro">About</a></li>
                     <li><a href="#resume">Resume</a></li>
@@ -39,209 +49,211 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div id="intro">
-        <div class="container">
-            <div class="row">
-                <h1 align="center">About me</h1>
-                <div class="col-lg-5 centered">
-                    <img class="img-circle" src="images/Dhara.JPG" alt="Dhara">
-                </div>
-                <div class="col-lg-5 col-sm-offset-1 centered">
-                    <p>I am Class of 2017 Computer Science Graduate Student from Northeastern University.</p>
-                    <p>I am enthusiastic about <b>Full Stack Software and Web Application Development</b> using <i>MEAN Stack and Java</i> as well as <b>Mobile Application Development</b> using <i>Android</i>.</p>
-                    <p>Apart from that I love traveling, listening to music, watching sitcoms, clicking photographs and am adventurous, fast-learner, amicable and adaptive.</p>
+    <div id="content">
+        <div id="intro">
+            <div class="container">
+                <div class="row">
+                    <h1 align="center">About me</h1>
+                    <div class="col-lg-5 centered">
+                        <img class="img-circle" src="images/Dhara.JPG" alt="Dhara">
+                    </div>
+                    <div class="col-lg-5 col-sm-offset-1 centered">
+                        <p>I am Class of 2017 Computer Science Graduate Student from Northeastern University.</p>
+                        <p>I am enthusiastic about <b>Full Stack Software and Web Application Development</b> using <i>MEAN Stack and Java</i> as well as <b>Mobile Application Development</b> using <i>Android</i>.</p>
+                        <p>Apart from that I love traveling, listening to music, watching sitcoms, clicking photographs and am adventurous, fast-learner, amicable and adaptive.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="resume" align="center" class="bottom">
-        <div class="container">
-            <a href="https://goo.gl/9CUGnh" target="_blank" type="button" class="btn btn-primary">
-                <span class="fa fa-download"></span>&nbsp;&nbsp;Download Resume
-            </a>
+        <div id="resume" align="center" class="bottom">
+            <div class="container">
+                <a href="https://goo.gl/9CUGnh" target="_blank" type="button" class="btn btn-primary">
+                    <span class="fa fa-download"></span>&nbsp;&nbsp;Download Resume
+                </a>
+            </div>
         </div>
-    </div>
 
-    <div id="work" class="container bottom">
-        <div class="row">
-            <h1 align="center" id="timeline">Timeline</h1>
+        <div id="work" class="container bottom">
+            <div class="row">
+                <h1 align="center" id="timeline">Timeline</h1>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> January 2017 - May 2017</small></p>
+                            <h5 class="timeline-title">Spring 2017, Graduated as Master of Science in Computer Science</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge info"><i class="glyphicon glyphicon-calendar"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> July 2016 - December 2016</small></p>
+                            <h5 class="timeline-title">Mobile App Developer Co-op, MassMutual Financial Services</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge"><i class="glyphicon glyphicon-tasks"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> May 2016 - June 2016</small></p>
+                            <h5 class="timeline-title">Summer-1 2016</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge"><i class="glyphicon glyphicon-tasks"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> January 2016 - May 2016</small></p>
+                            <h5 class="timeline-title">Spring 2016</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge"><i class="glyphicon glyphicon-tasks"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> January 2016 - May 2016</small></p>
+                            <h5 class="timeline-title">Fall 2015</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge info"><i class="glyphicon glyphicon-calendar"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> January 2013 - July 2015</small></p>
+                            <h5 class="timeline-title">Systems Engineer, Tata Consultancy Services</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> June 2008 - July 2012</small></p>
+                            <h5 class="timeline-title">Graduated as Bachelor of Engineering in Electronics and Communication</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <ul class="timeline">
-            <li>
-                <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> January 2017 - May 2017</small></p>
-                        <h5 class="timeline-title">Graduated as Master of Science in Computer Science</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p></p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge info"><i class="glyphicon glyphicon-calendar"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> July 2016 - December 2016</small></p>
-                        <h5 class="timeline-title">Mobile App Developer Co-op, MassMutual Financial Services</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p></p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-badge"><i class="glyphicon glyphicon-tasks"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> May 2016 - June 2016</small></p>
-                        <h5 class="timeline-title">Graduated as Master of Science in Computer Science</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p></p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge"><i class="glyphicon glyphicon-tasks"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> January 2016 - May 2016</small></p>
-                        <h5 class="timeline-title">Graduated as Master of Science in Computer Science</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p></p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-badge"><i class="glyphicon glyphicon-tasks"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> September 2015 - December 2015</small></p>
-                        <h5 class="timeline-title">Graduated as Master of Science in Computer Science</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p></p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-badge info"><i class="glyphicon glyphicon-calendar"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> January 2013 - July 2015</small></p>
-                        <h5 class="timeline-title">Systems Engineer, Tata Consultancy Services</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p></p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> June 2008 - July 2012</small></p>
-                        <h5 class="timeline-title">Graduated as Bachelor of Engineering in Electronics and Communication</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p></p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
 
-    <div id="skills">
-        <div class="container">
-            <div class="row">
-                <h1 align="center">Programming Languages and Technologies</h1>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 column small-12 medium-3 sbox">
-                    <i class="devicon-git-plain-wordmark colored"></i>
-                    <i class="devicon-github-plain-wordmark"></i>
-                    <i class="devicon-gitlab-plain-wordmark colored"></i>
-                    <i class="devicon-bitbucket-plain-wordmark colored"></i>
+        <div id="skills">
+            <div class="container">
+                <div class="row">
+                    <h1 align="center">Programming Languages and Technologies</h1>
                 </div>
 
-                <div class="col-lg-4 column small-12 medium-3 sbox">
-                    <i class="devicon-mongodb-plain-wordmark colored"></i>
-                    <i class="devicon-express-original-wordmark"></i>
-                    <i class="devicon-angularjs-plain-wordmark colored"></i>
-                    <i class="devicon-nodejs-plain-wordmark colored"></i>
+                <div class="row">
+                    <div class="col-lg-4 column small-12 medium-3 sbox">
+                        <i class="devicon-git-plain-wordmark colored"></i>
+                        <i class="devicon-github-plain-wordmark"></i>
+                        <i class="devicon-gitlab-plain-wordmark colored"></i>
+                        <i class="devicon-bitbucket-plain-wordmark colored"></i>
+                    </div>
+
+                    <div class="col-lg-4 column small-12 medium-3 sbox">
+                        <i class="devicon-mongodb-plain-wordmark colored"></i>
+                        <i class="devicon-express-original-wordmark"></i>
+                        <i class="devicon-angularjs-plain-wordmark colored"></i>
+                        <i class="devicon-nodejs-plain-wordmark colored"></i>
+                    </div>
+
+                    <div class="col-lg-4 column small-12 medium-3 sbox">
+                        <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                        <i class="devicon-html5-plain-wordmark colored"></i>
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                        <i class="devicon-webstorm-plain-wordmark colored"></i>
+                    </div>
+
+                    <div class="col-lg-4 column small-12 medium-3 sbox">
+                        <i class="devicon-android-plain-wordmark colored"></i>
+                        <i class="devicon-gradle-plain-wordmark"></i>
+                        <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                    </div>
                 </div>
 
-                <div class="col-lg-4 column small-12 medium-3 sbox">
-                    <i class="devicon-bootstrap-plain-wordmark colored"></i>
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <i class="devicon-webstorm-plain-wordmark colored"></i>
+                <div class="row">
+                    <div class="col-lg-4 column small-12 medium-3 sbox">
+                        <i class="devicon-java-plain-wordmark colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-jquery-plain-wordmark colored"></i>
+                    </div>
+
+                    <div class="col-lg-4 column small-12 medium-3 sbox">
+                        <i class="devicon-mysql-plain-wordmark colored"></i>
+                        <i class="devicon-oracle-original colored"></i>
+                        <i class="devicon-postgresql-plain-wordmark colored"></i>
+                    </div>
+
+                    <div class="col-lg-4 column small-12 medium-3 sbox">
+                        <i class="devicon-python-plain-wordmark colored"></i>
+                        <i class="devicon-pycharm-plain colored"></i>
+                        <i class="devicon-vim-plain colored"></i>
+                    </div>
+
+                    <div class="col-lg-4 column small-12 medium-3 sbox">
+                        <i class="devicon-slack-plain-wordmark"></i>
+                        <i class="devicon-confluence-plain-wordmark colored"></i>
+                        <i class="devicon-trello-plain-wordmark colored"></i>
+                        <i class="devicon-sourcetree-plain-wordmark"></i>
+                    </div>
                 </div>
 
-                <div class="col-lg-4 column small-12 medium-3 sbox">
-                    <i class="devicon-android-plain-wordmark colored"></i>
-                    <i class="devicon-gradle-plain-wordmark"></i>
-                    <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-                </div>
-            </div>
+                <div class="row">
+                    <div class="col-lg-4 column small-12 medium-3 sbox">
+                        <i class="devicon-apache-line-wordmark"></i>
+                        <br>
+                        <i class="devicon-tomcat-line-wordmark colored"></i>
+                    </div>
 
-            <div class="row">
-                <div class="col-lg-4 column small-12 medium-3 sbox">
-                    <i class="devicon-java-plain-wordmark colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-jquery-plain-wordmark colored"></i>
-                </div>
+                    <div class="col-lg-4 column small-12 medium-3 sbox">
+                        <i class="devicon-atom-original-wordmark"></i>
+                        <br>
+                        <i class="devicon-inkscape-plain-wordmark"></i>
+                    </div>
 
-                <div class="col-lg-4 column small-12 medium-3 sbox">
-                    <i class="devicon-mysql-plain-wordmark colored"></i>
-                    <i class="devicon-oracle-original colored"></i>
-                    <i class="devicon-postgresql-plain-wordmark colored"></i>
-                </div>
+                    <div class="col-lg-4 column small-12 medium-3 sbox">
+                        <i class="devicon-intellij-plain-wordmark"></i>
+                        <br>
+                        <i class="devicon-jetbrains-line-wordmark colored"></i>
+                    </div>
 
-                <div class="col-lg-4 column small-12 medium-3 sbox">
-                    <i class="devicon-python-plain-wordmark colored"></i>
-                    <i class="devicon-pycharm-plain colored"></i>
-                    <i class="devicon-vim-plain colored"></i>
-                </div>
-
-                <div class="col-lg-4 column small-12 medium-3 sbox">
-                    <i class="devicon-slack-plain-wordmark"></i>
-                    <i class="devicon-confluence-plain-wordmark colored"></i>
-                    <i class="devicon-trello-plain-wordmark colored"></i>
-                    <i class="devicon-sourcetree-plain-wordmark"></i>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 column small-12 medium-3 sbox">
-                    <i class="devicon-apache-line-wordmark"></i>
-                    <br>
-                    <i class="devicon-tomcat-line-wordmark colored"></i>
-                </div>
-
-                <div class="col-lg-4 column small-12 medium-3 sbox">
-                    <i class="devicon-atom-original-wordmark"></i>
-                    <br>
-                    <i class="devicon-inkscape-plain-wordmark"></i>
-                </div>
-
-                <div class="col-lg-4 column small-12 medium-3 sbox">
-                    <i class="devicon-intellij-plain-wordmark"></i>
-                    <br>
-                    <i class="devicon-jetbrains-line-wordmark colored"></i>
-                </div>
-
-                <div class="col-lg-4 column small-12 medium-3 sbox">
-                    <i class="devicon-windows8-original colored"></i>
-                    <i class="devicon-linux-plain"></i>
-                    <i class="devicon-apple-original"></i>
+                    <div class="col-lg-4 column small-12 medium-3 sbox">
+                        <i class="devicon-windows8-original colored"></i>
+                        <i class="devicon-linux-plain"></i>
+                        <i class="devicon-apple-original"></i>
+                    </div>
                 </div>
             </div>
         </div>

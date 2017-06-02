@@ -15,7 +15,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     color: #555;
-
+    padding-top: 75px;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 }
@@ -360,3 +360,7 @@ ul {
 .bottom {
     border-bottom: 1px solid #ccc;
 }
+
+/*#content {*/
+    /*padding-top: 65px;*/
+/*}*/
