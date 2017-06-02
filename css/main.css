@@ -356,3 +356,7 @@ ul {
 #skills {
     margin-bottom: 25px;
 }
+
+.bottom {
+    border-bottom: 1px solid #ccc;
+}
