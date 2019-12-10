@@ -36,11 +36,11 @@ h1 {
 .container {
     margin-bottom: 45px;
     padding: 10px;
-    background: #ffebe1; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#ffe8f7, #ffebe1); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#ffe8f7, #ffebe1); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#ffe8f7, #ffebe1); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#ffe8f7, #ffebe1); /* Standard syntax */
+    background: #b2ffdb; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#b2ffdb, #b2ffdb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#b2ffdb, #b2ffdb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#b2ffdb, #b2ffdb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#b2ffdb, #b2ffdb); /* Standard syntax */
 }
 
 /* Paragraph & Typographic */
@@ -58,7 +58,7 @@ p {
 
 /* Links */
 a {
-    color: #9f39bc;
+    color: #00796b;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -102,8 +102,8 @@ a:after {
 .navbar-inverse {
 	padding-bottom: 10px;
 	padding-top: 10px;
-    background-color: #9f39bc;
-    border-color: #8f14a0;
+    background-color: #00796b;
+    border-color: #00796b;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -129,7 +129,7 @@ a:after {
 }
 
 .progress-bar-theme {
-  background-color: #9f39bc;
+  background-color: #00796b;
 }
 
 /* +++++ WRAP SECTIONS +++++ */
