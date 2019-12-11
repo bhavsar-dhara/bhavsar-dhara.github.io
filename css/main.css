@@ -10,11 +10,11 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body {
-  	background-color: #ffffff;
+  	background-color: #00796b;
   	font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #555;
+    color: #eeeeee;
     padding-top: 75px;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -24,7 +24,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #333;
+    color: #fff;
 }
 
 h1 {
@@ -36,11 +36,14 @@ h1 {
 .container {
     margin-bottom: 45px;
     padding: 10px;
-    background: #b2ffdb; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#b2ffdb, #b2ffdb); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#b2ffdb, #b2ffdb); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#b2ffdb, #b2ffdb); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#b2ffdb, #b2ffdb); /* Standard syntax */
+    background: #424242; /* For browsers that do not support gradients */
+    /* background: -webkit-linear-gradient(#424242, #424242); /* For Safari 5.1 to 6.0 */
+    /* background: -o-linear-gradient(#424242, #424242); /* For Opera 11.1 to 12.0 */
+    /* background: -moz-linear-gradient(#424242, #424242); /* For Firefox 3.6 to 15 */
+    /* background: linear-gradient(#424242, #424242); /* Standard syntax */
+    /* #b2ffdb */
+    /* #009688 */
+    /* #616161 */
 }
 
 /* Paragraph & Typographic */
@@ -58,7 +61,7 @@ p {
 
 /* Links */
 a {
-    color: #00796b;
+    color: #b2dffb;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -70,7 +73,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
+    color: #b2ffdb;
     text-decoration: none;
     outline: 0;
 }
@@ -107,11 +110,11 @@ a:after {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-	color: white;
+	color: #b2dffb;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-	color: #222222;
+	color: #b2ffdb;
 }
 
 .navbar-brand {
@@ -185,7 +188,7 @@ ul {
 }
 
 .fontcolor {
-    color: black;
+    color: white;
 }
 
 .counter {
